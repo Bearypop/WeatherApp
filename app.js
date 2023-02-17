@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
     // req.body.countryName is the input from the user. countryName is the name of the input.
     const query = req.body.countryName;
-    const apiKey = "32c71205ef5b7ca94f5cc95ca59f80e2&units=metric";
+    const apiKey = "secret key";
     const unit = "metric";
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + unit;
     // get request to the openweathermap api
